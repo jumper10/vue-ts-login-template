@@ -1,0 +1,28 @@
+<div class="card">
+  <div  class="body">
+      <form  id="LoginForm"  v-on:submit="login()">
+          <h4 class="text-center">登 录</h4>
+
+          <div class="input-group">
+             
+              <div class="form-line">
+                  <input  v-model="username" autoFocus class="form-control" type="text" autocomplete="off" placeholder="UserNameOrEmail" name="userNameOrEmailAddress" required maxlength="255" />
+              </div>
+          </div>
+
+          <div class="input-group">
+           
+              <div class="form-line">
+                  <input  type="password" v-model="password" class="form-control" name="password" placeholder="Password" required maxlength="32">
+              </div>
+          </div>
+          <div class="row">              
+              <div class="col-xs-4">
+                  <button id="LoginButton" class="btn btn-block bg-pink waves-effect" type="submit" >登 录</button>
+              </div>
+          </div>
+
+        
+      </form>
+  </div>
+</div>
